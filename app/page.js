@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react";
 import confetti from "canvas-confetti";
 import { AnimatePresence, motion } from "framer-motion";
+import { RxReset } from "react-icons/rx";
 
 export default function Home() {
   const [isDone, setIsDone] = useState(false);
@@ -36,6 +37,11 @@ export default function Home() {
     confettiPlay();
   };
 
+  const reset = () => {
+    localStorage.removeItem("sabahnamazi");
+    setIsDone(false);
+  };
+
   //confetti patlatma fonksiyonu
   const confettiPlay = () => {
     confetti({
@@ -49,7 +55,7 @@ export default function Home() {
   };
 
   return (
-    <main className="flex h-screen flex-col items-center justify-between py-24 px-12 bg-primary">
+    <main className="flex h-screen flex-col items-center justify-between py-24 px-12 bg-primary relative">
       <h1 className="text-4xl font-bold text-center text-secondary">
         Namaza Kalktın Mı?
       </h1>
@@ -98,6 +104,13 @@ export default function Home() {
           </div>
         )}
       </AnimatePresence>
+
+      <div
+        onClick={reset}
+        className="w-[32px] h-[32px] flex items-center justify-center fixed top-[48px] right-[48px] cursor-pointer"
+      >
+        <RxReset className="w-[28px] h-[28px]" />
+      </div>
     </main>
   );
 }
