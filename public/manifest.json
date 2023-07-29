@@ -1,0 +1,28 @@
+{
+    "theme_color": "#F7F3EE",
+    "background_color": "#F7F3EE",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/",
+    "name":  "Namaza Kalktın mı?",
+    "orientation": "portrait-primary",
+    "short_name": "Namaza Kalktın mı?",
+    "description": "Namaza Kalktın mı?",
+    "icons": [
+      {
+        "src": "/images/192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/256x256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      },
+      {
+        "src": "/images/512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ]
+  }
