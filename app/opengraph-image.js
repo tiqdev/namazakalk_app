@@ -14,6 +14,8 @@ export const config = {
     twitter: {
         card: 'summary_large_image',
     },
+
+    runtime: runtime
 }
 
 // Image metadata
@@ -31,7 +33,6 @@ export default function Image() {
     let date = new Date().toLocaleDateString();
     return new ImageResponse(
         (
-            // tailwindcss imageresponse bacgkround image 
 
             <div tw="flex flex-col w-full h-full items-center justify-center bg-white relative">
                 <div tw="flex flex-col flex-1 items-center justify-center w-full h-full absolute top-0 left-0">
