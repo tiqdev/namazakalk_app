@@ -10,10 +10,6 @@ export const size = {
     height: 630,
 }
 
-// Font
-const interSemiBold = fetch(
-    new URL('./Inter-SemiBold.ttf', import.meta.url)
-).then((res) => res.arrayBuffer())
 
 export const contentType = 'image/png'
 
