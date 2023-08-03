@@ -38,7 +38,7 @@ export default function Image() {
                 <div tw="flex flex-col flex-1 items-center justify-center w-full h-full absolute top-0 left-0">
                     <img
                         tw="w-full h-full object-cover"
-                        src="https://namazakalk.vercel.app/og_back.jpg"
+                        src="https://pbs.twimg.com/media/Fx3ccXIXoAE0t9m?format=jpg&name=4096x4096"
                         alt="emoji"
                         width={1200}
                         height={630}
@@ -47,7 +47,7 @@ export default function Image() {
 
 
                 <div tw="flex flex-row flex-1 items-center justify-center">
-                    <div tw="flex flex-col items-start justify-start  mr-[120px]">
+                    <div tw="flex flex-col items-start justify-start mr-[120px]">
                         <h1 tw='text-[26px] font-[800] text-center text-black m-0 p-0'>
                             Bugün Namaza Kalktın Mı?
                         </h1>
