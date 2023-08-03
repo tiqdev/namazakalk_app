@@ -1,5 +1,14 @@
 import { ImageResponse } from 'next/server'
 
+export const dynamic = 'auto'
+export const dynamicParams = true
+export const revalidate = false
+export const fetchCache = 'auto'
+export const runtime = 'nodejs'
+export const preferredRegion = 'auto'
+export const maxDuration = 5
+
+
 //export twitter image 
 export const config = {
     twitter: {
@@ -19,6 +28,7 @@ export const contentType = 'image/png'
 // Image generation
 export default function Image() {
 
+    let date = new Date().toLocaleDateString();
     return new ImageResponse(
         (
             // tailwindcss imageresponse bacgkround image 
@@ -39,7 +49,9 @@ export default function Image() {
                             Bugün Namaza Kalktın Mı?
                         </h1>
 
-
+                        <h1 tw="text-[72px] font-bold text-center text-black m-0 p-0">
+                            {date}
+                        </h1>
                     </div>
                     <img
                         tw="w-[300px] h-[300px] drop-shadow-md"
