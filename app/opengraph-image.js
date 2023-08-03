@@ -22,25 +22,37 @@ export const contentType = 'image/png'
 
 // Image generation
 export default function Image() {
+
+    let date = new Date().toLocaleDateString();
     return new ImageResponse(
         (
-            // ImageResponse JSX element
-            <div tw="flex flex-col w-full h-full items-center justify-center bg-white">
-                <div tw="bg-gray-50 flex w-full">
-                    <div tw="flex flex-col md:flex-row w-full py-12 px-4 md:items-center justify-between p-8">
-                        <h2 tw="flex flex-col text-3xl sm:text-4xl font-bold tracking-tight text-gray-900 text-left">
-                            <span>Ready to dive in?</span>
-                            <span tw="text-indigo-600">Start your free trial today.</span>
-                        </h2>
-                        <div tw="mt-8 flex md:mt-0">
-                            <div tw="flex rounded-md shadow">
-                                <a tw="flex items-center justify-center rounded-md border border-transparent bg-indigo-600 px-5 py-3 text-base font-bold text-white">Get started</a>
-                            </div>
-                            <div tw="ml-3 flex rounded-md shadow">
-                                <a tw="flex items-center justify-center rounded-md border border-transparent bg-white px-5 py-3 text-base font-bold text-indigo-600">Learn more</a>
-                            </div>
-                        </div>
+            // tailwindcss imageresponse bacgkround image 
+
+            <div tw="flex flex-col w-full h-full items-center justify-center bg-white relative">
+                <div tw="flex flex-col flex-1 items-center justify-center w-full h-full absolute top-0 left-0">
+                    <img
+                        tw="w-full h-full object-cover"
+                        src="https://namazakalk.vercel.app/og_back.jpg"
+                        alt="emoji"
+                    />
+                </div>
+
+
+                <div tw="flex flex-row flex-1 items-center justify-center">
+                    <div tw="flex flex-col items-start justify-start  mr-[120px]">
+                        <h1 tw='text-[26px] font-[800] text-center text-black m-0 p-0'>
+                            Bugün Namaza Kalktın Mı?
+                        </h1>
+
+                        <h1 tw="text-[72px] font-bold text-center text-black m-0 p-0">
+                            {date}
+                        </h1>
                     </div>
+                    <img
+                        tw="w-[300px] h-[300px] drop-shadow-md"
+                        src="https://namazakalk.vercel.app/sleepy.png"
+                        alt="emoji"
+                    />
                 </div>
             </div>
         ),
