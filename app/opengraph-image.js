@@ -40,6 +40,8 @@ export default function Image() {
                         tw="w-full h-full object-cover"
                         src="https://namazakalk.vercel.app/og_back.jpg"
                         alt="emoji"
+                        width={1200}
+                        height={630}
                     />
                 </div>
 
@@ -58,6 +60,8 @@ export default function Image() {
                         tw="w-[300px] h-[300px] drop-shadow-md"
                         src="https://namazakalk.vercel.app/sleepy.png"
                         alt="emoji"
+                        width={300}
+                        height={300}
                     />
                 </div>
             </div>
