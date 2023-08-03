@@ -7,10 +7,6 @@ export const config = {
     },
 }
 
-
-// Route segment config
-export const runtime = 'nodejs'
-
 // Image metadata
 export const alt = 'About tiqdev'
 export const size = {
