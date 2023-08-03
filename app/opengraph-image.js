@@ -30,7 +30,13 @@ export const contentType = 'image/png'
 // Image generation
 export default function Image() {
 
-    let date = new Date().toLocaleDateString();
+    let date = new Date().toLocaleDateString("tr-TR", {
+        weekday: "long",
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+    });
+
     return new ImageResponse(
         (
 
@@ -52,7 +58,7 @@ export default function Image() {
                             Bugün Namaza Kalktın Mı?
                         </h1>
 
-                        <h1 tw="text-[72px] font-bold text-center text-black m-0 p-0">
+                        <h1 tw="text-[54px] font-bold text-center text-black m-0 p-0">
                             {date}
                         </h1>
                     </div>
